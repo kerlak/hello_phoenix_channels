@@ -1,5 +1,5 @@
 defmodule HelloPhoenixChannels.RoomChannel do
-  user Phoenix.Channel
+  use Phoenix.Channel
 
   def join("rooms:lobby", _message, socket) do
     {:ok, socket}
